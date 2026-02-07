@@ -15,7 +15,5 @@ to experience it click on the demo link.
 -> React (For logic)
 -> Tailwindcss (For styling)
 ....
-### Demo Link
-https://todo-mvxbbd43q-akshansh-kakkkars-projects.vercel.app/
-....
+### Demo Link : https://todo-mvxbbd43q-akshansh-kakkkars-projects.vercel.app/
 ### My Socials : www.linkedin.com/in/akshansh-kakkar-94b945381
