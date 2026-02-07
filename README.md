@@ -12,7 +12,7 @@ to experience it click on the demo link.
 -> Track your Todos
 
 ## Tech Stack
-`-> React (For logic)`
+`-> React (For logic)`  
 `-> Tailwindcss (For styling)`
 
 ### Demo Link : https://todo-mvxbbd43q-akshansh-kakkkars-projects.vercel.app/
