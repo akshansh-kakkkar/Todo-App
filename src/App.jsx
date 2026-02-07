@@ -72,7 +72,7 @@ function App() {
           <p className="text-2xl m-5 font-bold">Progress : {Percentage}%</p>
         </div>
       </div>
-      <div>
+      {/* <div>
         {task.map((tasks) => (
           <li key={tasks.id}>
             <span>
@@ -88,7 +88,25 @@ function App() {
             </span>
           </li>
         ))}
-      </div>
+      </div> */}
+      <table className="flex flex-col  mx-6 sm:my-12  rounded-t-3xl">
+        <thead className="p-2 bg-orange-400 rounded-t-3xl">
+          <tr className="flex justify-around  sm:mx-12 sm:text-4xl text-amber-950">
+            <th>Task</th>
+            <th>Completed</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody className="">
+          {task.map((tasks)=>(
+            <tr key={tasks.id} className="flex sm:p-4  justify-around  sm:text-2xl p-4   font-bold bg-[#ffe7c5] text-amber-950 text-center">
+              <td className="">{tasks.text}</td>
+              <td><input type="checkbox" className="w-5 h-5 accent-amber-950 cursor-pointer " onChange={()=>toggletask(tasks.id)} checked={tasks.isDone} /></td>
+              <td><button onClick={()=>deleteTask(tasks.id)} className="sm:text-xl py-1 px-2  bg-orange-400 sm:py-2 sm:px-4 rounded-xl">DELETE</button></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </>
   );
 }
